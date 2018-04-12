@@ -5,8 +5,8 @@ public class Main {
 	public static void main(String[] args) {
 		
 		sc = new Scanner(System.in);
-		double resultat;
-		System.out.println("Indiquer qu'elle operation vous voulez faire \n 1. + \n2. - \n 3. * \n 4. /");
+		float resultat=0;
+		System.out.println("Indiquer qu'elle operation vous voulez faire \n 1. + \n 2. - \n 3. * \n 4. /");
 		int operateur = sc.nextInt();
 		System.out.println("Indiquer 1er nombre");
 		float nb1 = sc.nextFloat();

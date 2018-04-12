@@ -1,27 +1,25 @@
 
 public class Calculatrice {
 	
-		public float additionner(float nb1, float nb2){
+	Calculatrice calculatrice = new Calculatrice();
+	
+		public static float additionner(float nb1, float nb2){
 		
-		float resultat=nb1+nb2;
-		return resultat;
+		return nb1+nb2;
 	}
 		
-		public float soustraire(float nb1, float nb2){
+		public static float soustraire(float nb1, float nb2){
 			
-			float resultat=nb1-nb2;
-			return resultat;
+			return nb1-nb2;
 		}
 		
-		public float multiplier(float nb1, float nb2){
+		public static float multiplier(float nb1, float nb2){
 			
-			float resultat=nb1*nb2;
-			return resultat;
+			return nb1*nb2;
 		}
 		
-		public float diviser(float nb1, float nb2){
+		public static float diviser(float nb1, float nb2){
 			
-			float resultat=nb1/nb2;
-			return resultat;
+			return nb1/nb2;
 		}
 }
