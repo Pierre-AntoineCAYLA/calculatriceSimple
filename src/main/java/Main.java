@@ -1,9 +1,9 @@
 import java.util.Scanner;
-import java.util.Scanner;
 public class Main {
 	private static Scanner sc;
 	public static void main(String[] args) {
 		
+		//l'utilisateur indique l'operation qu'il veut avec les nombres qu'il souhaite
 		sc = new Scanner(System.in);
 		float resultat=0;
 		System.out.println("Indiquer qu'elle operation vous voulez faire \n 1. + \n 2. - \n 3. * \n 4. /");
@@ -13,6 +13,7 @@ public class Main {
 		System.out.println("Indiquer 2eme nombre");
 		float nb2 = sc.nextFloat();
 		
+		//on envoie les paramètres à la calculatrice pour qu'il fasse l'opération
 		switch(operateur)
 		{
 		case 1 : resultat=Calculatrice.additionner(nb1,nb2);
@@ -27,6 +28,8 @@ public class Main {
 		case 4 :resultat=Calculatrice.diviser(nb1,nb2);
 			break ;
 		}
+		
+		//on affiche le resultat à l'operateur
 		System.out.println(resultat);
 
 	}
