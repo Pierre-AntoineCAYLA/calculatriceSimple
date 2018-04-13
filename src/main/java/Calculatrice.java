@@ -2,7 +2,7 @@
 public class Calculatrice {
 	
 //on crée un constructeur de calculatrice permettant d'effectuer les operations puis renvoie 	
-	Calculatrice calculatrice = new Calculatrice();
+
 	
 		public float additionner(float nb1, float nb2){
 		
