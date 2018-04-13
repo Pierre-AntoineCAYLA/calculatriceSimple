@@ -3,6 +3,7 @@ public class Main {
 	private static Scanner sc;
 	public static void main(String[] args) {
 		
+		Calculatrice calculatrice = new Calculatrice();
 		//l'utilisateur indique l'operation qu'il veut avec les nombres qu'il souhaite
 		sc = new Scanner(System.in);
 		float resultat=0;
@@ -16,16 +17,16 @@ public class Main {
 		//on envoie les paramètres à la calculatrice pour qu'il fasse l'opération
 		switch(operateur)
 		{
-		case 1 : resultat=Calculatrice.additionner(nb1,nb2);
+		case 1 : resultat=calculatrice.additionner(nb1,nb2);
 			break;
 		
-		case 2 :resultat=Calculatrice.soustraire(nb1,nb2);
+		case 2 :resultat=calculatrice.soustraire(nb1,nb2);
 			break ;
 			
-		case 3 :resultat=Calculatrice.multiplier(nb1,nb2);
+		case 3 :resultat=calculatrice.multiplier(nb1,nb2);
 			break ;
 			
-		case 4 :resultat=Calculatrice.diviser(nb1,nb2);
+		case 4 :resultat=calculatrice.diviser(nb1,nb2);
 			break ;
 		}
 		
